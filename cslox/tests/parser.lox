@@ -1,0 +1,12 @@
+// this is a comment
+(( )){} // grouping stuff
+!*+-/=<> <= == // operators
+"bing" "chill ing" // string
+123 456 0 67 111111111111111 // numbers
+6.7 4.20 0.69 1.0 // decimal numbers
+x y z uma musume // identifiers
+
+multi-line comment /* a
+this is a *comment */ b
+c /* d /* nesting */ */ e /* comment that does'nt end
+

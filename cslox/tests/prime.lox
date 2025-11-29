@@ -1,0 +1,38 @@
+fun get_remainder(n, d) {
+	if (d == 0) {
+		return nil;
+	}
+	
+	if (n < d) {
+		return n;
+	}
+
+	while (n >= d) {
+		n = n - d;
+	}
+
+	return n;
+}
+
+fun is_prime(n) {
+	if (n <= 1) {
+		return false;
+	}
+
+	if (n <= 3) {
+		return true;
+	}
+	
+	for (var i = n - 1; i >= 2; i = i - 1) {
+		if (get_remainder(n, i) == 0) {
+			return false;
+		}
+	}
+
+	return true;
+}
+
+for (var i = 0; i < 25; i = i + 1) {
+	print i;
+	print is_prime(i);
+}
